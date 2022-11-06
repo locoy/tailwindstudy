@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./style.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body class="">    
+<div class="font-bold ">1、Flex Basis</div>
+
+CSS3 Flex弹性布局参考文章:http://events.jianshu.io/p/30515dd1478a
+
+<div class="flex flex-row">
+  <div class="basis-1/4 bg-pink-300">01</div>
+  <div class="basis-1/4 bg-pink-100">02</div>
+  <div class="basis-1/2 bg-pink-300">03</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">2、Flex Direction</div>
+<div class="flex flex-row justify-between bg-slate-300">
+  <div class="bg-pink-300">01</div>
+  <div class="bg-pink-300">02</div>
+  <div class="bg-pink-300">03</div>
+</div>
+
+<div class="flex flex-row-reverse justify-between bg-slate-500">
+  <div class="bg-pink-100">01</div>
+  <div class="bg-pink-100">02</div>
+  <div class="bg-pink-100">03</div>
+</div>
+
+<div class="flex flex-col justify-evenly h-40 bg-slate-100">
+  <div class="bg-pink-300">01</div>
+  <div class="bg-pink-300">02</div>
+  <div class="bg-pink-300">03</div>
+</div>
+
+<div class="flex flex-col-reverse justify-evenly h-40 bg-pink-200">
+  <div class="bg-pink-300">01</div>
+  <div class="bg-pink-300">02</div>
+  <div class="bg-pink-300">03</div>
+</div>
+<hr class="border-black my-1">
+<div class="font-bold ">3、Flex Wrap</div>
+<div class="flex flex-row justify-evenly h-4 bg-pink-100 w-72 flex-wrap h-44">
+  <div class="bg-pink-300 basis-16 h-4">01</div>
+  <div class="bg-pink-300 basis-16 h-4">02</div>
+  <div class="bg-pink-300 basis-16 h-4">03</div>
+  <div class="bg-pink-300 basis-16 h-4">04</div>
+  <div class="bg-pink-300 basis-16 h-4">05</div>
+  <div class="bg-pink-300 basis-16 h-4">06</div>
+  <div class="bg-pink-300 basis-16 h-4">07</div>
+  <div class="bg-pink-300 basis-16 h-4">08</div>
+  <div class="bg-pink-300 basis-16 h-4">09</div>
+</div>
+
+<div class="flex flex-row justify-evenly h-4 bg-pink-700 w-72 flex-wrap-reverse h-44">
+  <div class="bg-pink-300 basis-16 h-4">01</div>
+  <div class="bg-pink-300 basis-16 h-4">02</div>
+  <div class="bg-pink-300 basis-16 h-4">03</div>
+  <div class="bg-pink-300 basis-16 h-4">04</div>
+  <div class="bg-pink-300 basis-16 h-4">05</div>
+  <div class="bg-pink-300 basis-16 h-4">06</div>
+  <div class="bg-pink-300 basis-16 h-4">07</div>
+  <div class="bg-pink-300 basis-16 h-4">08</div>
+  <div class="bg-pink-300 basis-16 h-4">09</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">4、Flex</div>
+<div class="flex bg-pink-700 justify-between">
+  <div class="flex-none w-14 bg-slate-200">01</div>
+  <div class="flex-initial w-64  bg-slate-400">02</div>
+  <div class="flex-initial w-32  bg-slate-200">03</div>
+</div>
+
+<div class="flex bg-pink-200 justify-between">
+  <div class="flex-1 bg-slate-200">01</div>
+  <div class="flex-1  bg-slate-400">02</div>
+  <div class="flex-1 bg-slate-200">03</div>
+</div>
+
+<div class="flex bg-pink-100 justify-between">
+  <div class="flex-none bg-slate-200">01</div>
+  <div class="flex-auto  bg-slate-400">02</div>
+  <div class="flex-auto bg-slate-200">03</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">5、Flex Grow</div>
+<div class="flex bg-pink-200 justify-between">
+  <div class="flex-grow bg-slate-200">01</div>
+  <div class="flex-grow  bg-slate-400">02</div>
+  <div class="flex-grow-0 bg-slate-200">03</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">6、Flex Shrink</div>
+<div class="flex bg-pink-200 justify-between">
+  <div class="flex-shrink basis-32 bg-slate-200">01</div>
+  <div class="flex-shrink basis-32 bg-slate-400">02</div>
+  <div class="flex-shrink-0 bg-slate-200">03</div>
+</div>
+<hr class="border-black my-1">
+
+
+<div class="font-bold ">7、Flex Order</div>
+<div class="flex justify-between">
+  <div class="order-last">01</div>
+  <div>02</div>
+  <div>03</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">8、Grid Template Columns</div>
+<div class="grid grid-cols-4 gap-4 bg-pink-100">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+  <div class="bg-pink-700">04</div>
+  <div class="bg-pink-700">05</div>
+  <div class="bg-pink-700">06</div>
+  <div class="bg-pink-700">07</div>
+  <div class="bg-pink-700">08</div>
+  <div class="bg-pink-700">09</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">9、Grid Column Start / End</div>
+Spanning columns:
+<div class="grid grid-cols-3 gap-4 bg-pink-100">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+  <div class="col-span-2 bg-pink-700">04</div>
+  <div class="bg-pink-700">05</div>
+  <div class="bg-pink-700">06</div>
+  <div class="col-span-2 bg-pink-700">07</div>
+</div>
+Starting and ending lines
+<div class="grid grid-cols-6 gap-4 bg-pink-200">
+  <div class="col-start-2 col-span-4 bg-pink-700">01</div>
+  <div class="col-start-1 col-end-3 bg-pink-600">02</div>
+  <div class="col-end-7 col-span-2 bg-pink-700">03</div>
+  <div class="col-start-1 col-end-7 bg-pink-600">04</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">10、Grid Template Rows</div>
+<div class="grid grid-rows-4 grid-flow-col gap-4 bg-pink-100">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+  <div class="bg-pink-700">04</div>
+  <div class="bg-pink-700">05</div>
+  <div class="bg-pink-700">06</div>
+  <div class="bg-pink-700">07</div>
+  <div class="bg-pink-700">08</div>
+  <div class="bg-pink-700">09</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">10、Grid Row Start / End</div>
+<div class="grid grid-rows-3 grid-flow-col gap-4 bg-pink-100">
+  <div class="row-span-3 bg-pink-700">01</div>
+  <div class="col-span-2 bg-pink-700">02</div>
+  <div class="row-span-2 col-span-2 bg-pink-700">03</div>
+</div>
+<hr class="border-black my-1">
+
+
+<div class="font-bold">11、Grid Auto Flow</div>
+<div class="grid grid-flow-row-dense grid-cols-3 gap-2 grid-rows-3 bg-pink-100">
+  <div class="col-span-2 bg-pink-700">01</div>
+  <div class="col-span-2 bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+  <div class="bg-pink-700">04</div>
+  <div class="bg-pink-700">05</div>
+</div>
+<hr class="border-black my-1">
+</body>
+</html>

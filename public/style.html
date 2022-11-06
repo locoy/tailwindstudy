@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./style.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body class="">
+    
+<div class="font-bold">1、容器：</div>
+<div class="container bg-purple-300 h-10 mx-auto">我是大容器</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">2、Box Decoration Break：</div>
+<div class="box-decoration-clone text-yellow-800 border border-pink-600 mx-6 px-6">我是大<br>容器</div>
+<div class="box-decoration-slice text-yellow-800 border border-pink-600 mx-6 px-6 my-1">我是大<br>容器</div>
+<hr class="border-black my-1" >
+
+<div class="font-bold">3、Box Sizing：</div>
+<div class="box-border text-yellow-800 border-8 border-pink-600 mx-6 px-6 max-h-10 overflow-hidden">我是大<br>容器</div>
+<div class="box-content text-yellow-800 border-8 border-pink-600 mx-6 px-6 my-1 max-h-10  overflow-hidden">我是大<br>容器</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">4、Display</div>
+<div>inline元素相较于inline-block元素和block元素最大的区别点是，该种元素不能设置宽高，行高（line-height），盒子模型中的margin-top和margin-bottom设置对于inline元素也是无效的，这个大家在使用中要注意，其他的盒子模型中的属性padding,margin-left,margin-right都是可以正常使用，这个是inline元素和其他类型元素的最大区别。</div>
+Block:
+<div class="space-y-4 bg-red-300">
+  <span class="block text-yellow-800 border border-pink-600 mx-6 px-6 max-h-10">1</span>
+  <span class="block text-yellow-800 border border-pink-600 mx-6 px-6 max-h-10">2</span>
+  <span class="block text-yellow-800 border border-pink-600 mx-6 px-6 max-h-10">3</span>
+</div>
+
+Inline:
+<div class="space-y-4 my-1  bg-red-300">
+  <span class="inline text-yellow-800 border border-pink-600 mx-6 px-6 max-h-10">1</span>
+  <span class="inline text-yellow-800 border border-pink-600 mx-6 px-6 max-h-10">2</span>
+  <span class="inline text-yellow-800 border border-pink-600 mx-6 px-6 max-h-10">3</span>
+</div>
+
+
+Inline-Block:
+<div class="space-y-4 my-1 bg-red-300">
+  <span class="inline-block text-yellow-800 border border-pink-600 mx-6 px-6 max-h-10">1</span>
+  <span class="inline-block text-yellow-800 border border-pink-600 mx-6 px-6 max-h-10">2</span>
+  <span class="inline-block text-yellow-800 border border-pink-600 mx-6 px-6 max-h-10">3</span>
+</div>
+
+Flex:
+<div class="space-x-4 flex bg-red-300">
+  <div class="flex-1 text-yellow-800 border border-pink-600 ">1</div>
+  <div class="flex-1 text-yellow-800 border border-pink-600 ">2</div>
+  <div class="flex-1 text-yellow-800 border border-pink-600 ">3</div>
+</div>
+
+inline Flex:
+<div></div>
+<div class="space-x-4 inline-flex bg-red-300">
+  <div class="flex-1 text-yellow-800 border border-pink-600 ">1</div>
+  <div class="flex-1 text-yellow-800 border border-pink-600 ">2</div>
+  <div class="flex-1 text-yellow-800 border border-pink-600 ">3</div>
+</div>
+<div></div>
+Grid:
+<div class="space-x-4 grid grid-cols-3 bg-red-300">
+  <span class="text-yellow-800 border border-pink-600">1</span>
+  <span class="text-yellow-800 border border-pink-600">2</span>
+  <span class="text-yellow-800 border border-pink-600">3</span>
+  <span class="text-yellow-800 border border-pink-600">4</span>
+  <span class="text-yellow-800 border border-pink-600">5</span>  
+  <span class="text-yellow-800 border border-pink-600">6</span>
+  <span class="text-yellow-800 border border-pink-600">7</span>
+  <span class="text-yellow-800 border border-pink-600">8</span>
+  <span class="text-yellow-800 border border-pink-600">9</span>
+</div>
+
+Inline Grid:
+<div class="space-x-4 inline-grid grid-cols-3 bg-red-300">
+  <span class="text-yellow-800 border border-pink-600">1</span>
+  <span class="text-yellow-800 border border-pink-600">2</span>
+  <span class="text-yellow-800 border border-pink-600">3</span>
+  <span class="text-yellow-800 border border-pink-600">4</span>
+  <span class="text-yellow-800 border border-pink-600">5</span>  
+  <span class="text-yellow-800 border border-pink-600">6</span>
+  <span class="text-yellow-800 border border-pink-600">7</span>
+  <span class="text-yellow-800 border border-pink-600">8</span>
+  <span class="text-yellow-800 border border-pink-600">9</span>
+</div>
+
+<div class="space-x-4 inline-grid grid-cols-3 bg-red-300">
+  <span class="text-yellow-800 border border-pink-600">1</span>
+  <span class="text-yellow-800 border border-pink-600">2</span>
+  <span class="text-yellow-800 border border-pink-600">3</span>
+</div>
+<div></div>
+Contents:使用 contents 创建一个 “phantom” 容器，它的子代就像父代的直接子代一样。
+<div class="flex bg-red-300">
+  <div class="flex-1 border border-pink-600">1</div>
+  <div class="contents">
+    <div class="flex-1 border border-pink-600">2</div>
+    <div class="flex-1 border border-pink-600">3</div>
+  </div>
+  <div class="flex-1 border border-pink-600">4</div>
+</div>
+
+Table:
+<div class="table w-full ">
+  <div class="table-row-group">
+    <div class="table-row">
+      <div class="table-cell ">A cell with more content</div>
+      <div class="table-cell ">Cell 2</div>
+      <div class="table-cell ">Cell 3</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell ">Cell 4</div>
+      <div class="table-cell ">A cell with more content</div>
+      <div class="table-cell ">Cell 6</div>
+    </div>
+  </div>
+</div>
+
+Hidden:
+<div class="border-pink-600">1</div>
+<div class="border-pink-600 hidden">2</div>
+<div class="border-pink-600">3</div>
+<hr class="border-black my-1">
+
+
+<div class="font-bold">4、浮动</div>
+<div class="container bg-purple-300 mx-auto my-2">
+  <img class="float-right" src="./images/logo.png">
+<p>LProin velit libero, interdum ac rhoncus sit amet, pellentesque ac turpis. Quisque ac luctus turpis, vel efficitur ante. Cras convallis risus vel vehicula dapibus. Donec eget neque fringilla, faucibus mi quis, porttitor magna. Cras pellentesque leo est, et luctus neque rutrum eu. Aliquam consequat velit sed sem posuere, vitae sollicitudin mi consequat. Mauris eget ipsum sed dui rutrum fringilla. Donec varius vehicula magna sit amet auctor. Ut congue vehicula lectus in blandit. Vivamus suscipit eleifend turpis, nec sodales sem vulputate a. Curabitur pulvinar libero viverra, efficitur odio eu, finibus justo. Etiam eu vehicula felis.</p>
+</div>
+
+
+<div class="container bg-purple-300 mx-auto my-2">
+  <img class="float-left" src="./images/logo.png">
+<p>LProin velit libero, interdum ac rhoncus sit amet, pellentesque ac turpis. Quisque ac luctus turpis, vel efficitur ante. Cras convallis risus vel vehicula dapibus. Donec eget neque fringilla, faucibus mi quis, porttitor magna. Cras pellentesque leo est, et luctus neque rutrum eu. Aliquam consequat velit sed sem posuere, vitae sollicitudin mi consequat. Mauris eget ipsum sed dui rutrum fringilla. Donec varius vehicula magna sit amet auctor. Ut congue vehicula lectus in blandit. Vivamus suscipit eleifend turpis, nec sodales sem vulputate a. Curabitur pulvinar libero viverra, efficitur odio eu, finibus justo. Etiam eu vehicula felis.</p>
+</div>
+
+
+<div class="container bg-purple-300 mx-auto my-2">
+  <img class="float-none" src="./images/logo.png">
+<p>LProin velit libero, interdum ac rhoncus sit amet, pellentesque ac turpis. Quisque ac luctus turpis, vel efficitur ante. Cras convallis risus vel vehicula dapibus. Donec eget neque fringilla, faucibus mi quis, porttitor magna. Cras pellentesque leo est, et luctus neque rutrum eu. Aliquam consequat velit sed sem posuere, vitae sollicitudin mi consequat. Mauris eget ipsum sed dui rutrum fringilla. Donec varius vehicula magna sit amet auctor. Ut congue vehicula lectus in blandit. Vivamus suscipit eleifend turpis, nec sodales sem vulputate a. Curabitur pulvinar libero viverra, efficitur odio eu, finibus justo. Etiam eu vehicula felis.</p>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">5、清除浮动</div>
+<div class="container bg-purple-300 mx-auto my-2">
+  <img class="float-left" src="./images/logo.png">
+  <img class="float-right" src="./images/logo.png">
+<p class="clear-left">LProin velit libero, interdum ac rhoncus sit amet, pellentesque ac turpis. Quisque ac luctus turpis, vel efficitur ante. Cras convallis risus vel vehicula dapibus. Donec eget neque fringilla, faucibus mi quis, porttitor magna. Cras pellentesque leo est, et luctus neque rutrum eu. Aliquam consequat velit sed sem posuere, vitae sollicitudin mi consequat. Mauris eget ipsum sed dui rutrum fringilla. Donec varius vehicula magna sit amet auctor. Ut congue vehicula lectus in blandit. Vivamus suscipit eleifend turpis, nec sodales sem vulputate a. Curabitur pulvinar libero viverra, efficitur odio eu, finibus justo. Etiam eu vehicula felis.</p>
+</div>
+<div class="container bg-purple-300 mx-auto my-2">
+  <img class="float-left" src="./images/logo.png">
+  <img class="float-right" src="./images/logo.png">
+<p class="clear-right">LProin velit libero, interdum ac rhoncus sit amet, pellentesque ac turpis. Quisque ac luctus turpis, vel efficitur ante. Cras convallis risus vel vehicula dapibus. Donec eget neque fringilla, faucibus mi quis, porttitor magna. Cras pellentesque leo est, et luctus neque rutrum eu. Aliquam consequat velit sed sem posuere, vitae sollicitudin mi consequat. Mauris eget ipsum sed dui rutrum fringilla. Donec varius vehicula magna sit amet auctor. Ut congue vehicula lectus in blandit. Vivamus suscipit eleifend turpis, nec sodales sem vulputate a. Curabitur pulvinar libero viverra, efficitur odio eu, finibus justo. Etiam eu vehicula felis.</p>
+</div>
+
+<div class="container bg-purple-300 mx-auto my-2">
+  <img class="float-left" src="./images/logo.png">
+  <img class="float-right" src="./images/logo.png">
+<p class="clear-both">LProin velit libero, interdum ac rhoncus sit amet, pellentesque ac turpis. Quisque ac luctus turpis, vel efficitur ante. Cras convallis risus vel vehicula dapibus. Donec eget neque fringilla, faucibus mi quis, porttitor magna. Cras pellentesque leo est, et luctus neque rutrum eu. Aliquam consequat velit sed sem posuere, vitae sollicitudin mi consequat. Mauris eget ipsum sed dui rutrum fringilla. Donec varius vehicula magna sit amet auctor. Ut congue vehicula lectus in blandit. Vivamus suscipit eleifend turpis, nec sodales sem vulputate a. Curabitur pulvinar libero viverra, efficitur odio eu, finibus justo. Etiam eu vehicula felis.</p>
+</div>
+
+<div class="container bg-purple-300 mx-auto my-2">
+  <img class="float-left" src="./images/logo.png">
+  <img class="float-right" src="./images/logo.png">
+<p class="clear-none">LProin velit libero, interdum ac rhoncus sit amet, pellentesque ac turpis. Quisque ac luctus turpis, vel efficitur ante. Cras convallis risus vel vehicula dapibus. Donec eget neque fringilla, faucibus mi quis, porttitor magna. Cras pellentesque leo est, et luctus neque rutrum eu. Aliquam consequat velit sed sem posuere, vitae sollicitudin mi consequat. Mauris eget ipsum sed dui rutrum fringilla. Donec varius vehicula magna sit amet auctor. Ut congue vehicula lectus in blandit. Vivamus suscipit eleifend turpis, nec sodales sem vulputate a. Curabitur pulvinar libero viverra, efficitur odio eu, finibus justo. Etiam eu vehicula felis.</p>
+</div>
+<hr class="border-black my-1">
+
+
+<div class="font-bold">6、Isolation</div>
+https://www.zhangxinxu.com/wordpress/2016/01/understand-css3-isolation-isolate/
+<hr class="border-black my-1">
+
+<div class="font-bold">7、Object Fit</div>
+
+<div class="container bg-purple-300 mx-auto  block">
+  <img class=" object-contain h-48 w-full" src="./images/map.png" alt="">
+</div>
+<div class="container bg-purple-300 mx-auto  block">
+  <img class=" object-cover h-48 w-full" src="./images/map.png" alt="">
+</div>
+
+<div class="container bg-purple-300 mx-auto  block">
+  <img class=" object-fill h-48 w-full" src="./images/map.png" alt="">
+</div>
+
+<div class="container bg-purple-300 mx-auto  block">
+  <img class=" object-none h-48 w-full" src="./images/map.png" alt="">
+</div>
+
+<div class="container bg-purple-300 mx-auto  block">
+  <img class=" object-scale-down h-48 w-full" src="./images/map.png" alt="">
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">8、Object Position</div>
+object-position属性常与object-fit一起使用，一般用于img和video标签
+<div class="container bg-purple-300 mx-auto my-2">
+  <img class="object-none object-left-top bg-yellow-300 w-24 h-24 inline"  src="./images/logo.png">
+  <img class="object-none object-top bg-yellow-300 w-24 h-24 inline"  src="./images/logo.png">
+  <img class="object-none object-right-top bg-yellow-300 w-24 h-24 inline"  src="./images/logo.png">
+  <img class="object-none object-left bg-yellow-300 w-24 h-24 inline"  src="./images/logo.png">
+  <img class="object-none object-center bg-yellow-300 w-24 h-24 inline"  src="./images/logo.png">
+  <img class="object-none object-right bg-yellow-300 w-24 h-24 inline"  src="./images/logo.png">
+  <img class="object-none object-left-bottom bg-yellow-300 w-24 h-24 inline"  src="./images/logo.png">
+  <img class="object-none object-bottom bg-yellow-300 w-24 h-24 inline"  src="./images/logo.png">
+  <img class="object-none object-right-bottom bg-yellow-300 w-24 h-24 inline" src="./images/logo.png">
+</div>
+
+<hr class="border-black my-1">
+
+<div class="font-bold">9、溢出</div>
+<div class="container bg-purple-300 mx-auto h-10 my-1 overflow-visible">我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+<div class="h-20"></div>
+<div class="container bg-purple-300 mx-auto h-10 my-1 overflow-hidden">我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+<div class="h-6"></div>
+
+<div class="container bg-purple-300 mx-auto h-10 my-1">我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+<div class="h-20"></div>
+<div class="container bg-purple-300 mx-auto h-10 my-1 overflow-auto">我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+
+<div class="container bg-purple-300 mx-auto my-1 h-16 overflow-x-auto whitespace-nowrap">我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+<div class="container bg-purple-300 mx-auto h-10 my-1 overflow-y-auto">我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+<div class="container bg-purple-300 mx-auto h-20 my-1 overflow-scroll">我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor.是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">10、Overscroll Behavior</div>
+<div class="container bg-purple-300 mx-auto h-20 my-2 overscroll-auto overflow-y-auto">我是大容器里Lorem ipsum dolor sit amet, 我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis aug我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augconsectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+<div class="container bg-purple-300 mx-auto h-20 my-2 overscroll-contain overflow-y-auto">我是大容器里Lorem ipsum dolor sit amet, 我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis aug我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augconsectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+<div class="container bg-purple-300 mx-auto h-20 my-2 overscroll-none overflow-y-auto">我是大容器里Lorem ipsum dolor sit amet, 我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis aug我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augconsectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">11、定位</div>
+默认static
+<div class="static bg-purple-300 mx-auto h-20 w-40">
+  <p>Static parent1</p>
+  <div class="absolute top-0 left-0 h-10 w-20 bg-yellow-300">
+    <p>Absolute child1</p>
+  </div>
+</div>
+
+<div class="relative bg-purple-300 mx-auto h-20 w-40">
+  <p>Static parent2</p>
+  <div class="absolute top-0 left-0 h-10 w-20 bg-yellow-300">
+    <p>Absolute child2</p>
+  </div>
+</div>
+
+
+<div class="static bg-purple-300 ">
+  <!-- Static parent -->
+  <div class="static bg-yellow-300">Static child3</p></div>
+  <div class="inline-block bg-yellow-300"><p>Static sibling3</p></div>
+  <!-- Static parent -->
+  <div class="absolute bg-yellow-300 top-0 right-0"><p>Absolute child3</p></div>
+  <div class="inline-block bg-yellow-300"><p>Static sibling3</p></div>
+</div>
+
+
+<div class="container bg-purple-300 mx-auto h-60 my-1 overflow-auto">
+  <div class="fixed w-20 h-6 bg-red-700 bottom-40 right-5 z-50">fixed</div>
+  我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. 我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare.
+  我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor.
+  我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare.
+  我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare.
+  我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare.
+  我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare.
+  我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare. Phasellus convallis sagittis augue ut ornare.
+  我是大容器里Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend rutrum auctor. Phasellus convallis sagittis augue ut ornare.Vestibulum et gravida lectus, sed ultrices sapien. Nullam aliquet elit dui, vitae hendrerit lectus volutpat eget面的内容
+</div>
+
+<div class="h-52 overflow-y-auto">
+<div>
+  <div class="sticky top-0 bg-blue-500">Sticky Heading 1</div>
+  <p class="py-4 bg-purple-300">Quisque cursus...</p>
+</div>
+<div>
+  <div class="sticky top-0 bg-blue-500">Sticky Heading 2</div>
+  <p class="py-4 bg-purple-300">Integer lacinia...</p>
+</div>
+<div>
+  <div class="sticky top-0 bg-blue-500">Sticky Heading 3</div>
+  <p class="py-4 bg-purple-300">Nullam mauris...</p>
+</div>
+<div>
+  <div class="sticky top-0 bg-blue-500">Sticky Heading 4</div>
+  <p class="py-4 bg-purple-300">Nullam mauris...</p>
+</div>
+<div>
+  <div class="sticky top-0 bg-blue-500">Sticky Heading 5</div>
+  <p class="py-4 bg-purple-300">Nullam mauris...</p>
+</div>
+<div>
+  <div class="sticky top-0 bg-blue-500">Sticky Heading 6</div>
+  <p class="py-4 bg-purple-300">Nullam mauris...</p>
+</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">12、Top/Right/Bottom/Left</div>
+<div class="relative h-32 w-32 bg-purple-300 border border-black inline-block">
+  <div class="absolute inset-x-1 top-1 h-14 bg-blue-500">1</div>
+</div>
+
+<div class="relative h-32 w-32 bg-purple-300 border border-black   inline-block">
+  <div class="absolute inset-y-1 right-1 w-14 bg-blue-500">2</div>
+</div>
+
+
+<div class="relative h-32 w-32 bg-purple-300 border border-black   inline-block">
+  <div class="absolute inset-x-1 bottom-1 h-14 bg-blue-500">3</div>
+</div>
+
+<div class="relative h-32 w-32 bg-purple-300 border border-black   inline-block">
+  <div class="absolute inset-y-1 left-1 w-14 bg-blue-500">4</div>
+</div>
+
+<div class="relative h-32 w-32 bg-purple-300 border border-black   inline-block">
+  <div class="absolute inset-y-2 left-2 w-28 bg-blue-500">5</div>
+</div>
+
+<div class="relative h-32 w-32 bg-purple-300 border border-black   inline-block">
+  <div class="absolute inset-0 bg-blue-500">6</div>
+</div>
+
+<div class="relative h-32 w-32 bg-purple-300 border border-black   inline-block">
+  <div class="absolute bottom-0 left-0 h-16 w-16 bg-blue-500">7</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">13、可见性</div>
+<div class="flex justify-center space-x-4 bg-purple-300">
+  <div class="bg-blue-500 w-10">1</div>
+  <div class="invisible bg-blue-500 w-10">2</div>
+  <div class="bg-blue-500 w-10">3</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">14、Z-Index</div>
+Fiexed 层z-50已测
+<hr class="border-black my-1">
+</body>
+</html>
