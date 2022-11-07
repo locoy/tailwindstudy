@@ -51,13 +51,13 @@
 ### [2022-11-06]()
 
 完成以下大类
-- [间距]()
-- [尺寸]()
-- [排版]()
-- [背景]()
-- [边框]()
-- [特效]()
-- [Flex]()
+- [间距](Space-Sizing.html)
+- [尺寸](Space-Sizing.html)
+- [排版](font.html)
+- [背景](background.html)
+- [边框](border-and-box.html)
+- [特效](border-and-box.html)
+- [Flex](flex.html)
 
 ### [2022-11-07]()
 计划中
