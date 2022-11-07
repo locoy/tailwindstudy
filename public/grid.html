@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./style.css" rel="stylesheet">
+<style>
+</style>
+</head>
+<body class="">    
+Grid布局参考文章：https://www.zhangxinxu.com/wordpress/2018/11/display-grid-css-css3/
+
+<div class="font-bold ">1、Grid Template Columns</div>
+<div class="grid grid-cols-4 gap-4 bg-pink-100">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+  <div class="bg-pink-700">04</div>
+  <div class="bg-pink-700">05</div>
+  <div class="bg-pink-700">06</div>
+  <div class="bg-pink-700">07</div>
+  <div class="bg-pink-700">08</div>
+  <div class="bg-pink-700">09</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">2、Grid Column Start / End</div>
+Spanning columns:
+<div class="grid grid-cols-3 gap-4 bg-pink-100">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+  <div class="col-span-2 bg-pink-700">04</div>
+  <div class="bg-pink-700">05</div>
+  <div class="bg-pink-700">06</div>
+  <div class="col-span-2 bg-pink-700">07</div>
+</div>
+Starting and ending lines
+<div class="grid grid-cols-6 gap-4 bg-pink-200">
+  <div class="col-start-2 col-span-4 bg-pink-700">01</div>
+  <div class="col-start-1 col-end-3 bg-pink-600">02</div>
+  <div class="col-end-7 col-span-2 bg-pink-700">03</div>
+  <div class="col-start-1 col-end-7 bg-pink-600">04</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">3、Grid Template Rows</div>
+<div class="grid grid-rows-4 grid-flow-col gap-4 bg-pink-100">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+  <div class="bg-pink-700">04</div>
+  <div class="bg-pink-700">05</div>
+  <div class="bg-pink-700">06</div>
+  <div class="bg-pink-700">07</div>
+  <div class="bg-pink-700">08</div>
+  <div class="bg-pink-700">09</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">4、Grid Row Start / End</div>
+<div class="grid grid-rows-3 grid-flow-col gap-4 bg-pink-100">
+  <div class="row-span-3 bg-pink-700">01</div>
+  <div class="col-span-2 bg-pink-700">02</div>
+  <div class="row-span-2 col-span-2 bg-pink-700">03</div>
+</div>
+<hr class="border-black my-1">
+
+
+<div class="font-bold">5、Grid Auto Flow</div>
+dense属性的作用就是填充有具体位置元素移动导致产生的空隙：https://zhuanlan.zhihu.com/p/397233284
+<div class="grid grid-flow-row-dense grid-cols-3 gap-2 grid-rows-3 bg-pink-100">
+  <div class="col-span-2 bg-pink-700">01</div>
+  <div class="col-span-2 bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+  <div class="bg-pink-700">04</div>
+  <div class="bg-pink-700">05</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">6、Grid Auto Columns</div>
+<div class="grid grid-flow-col auto-cols-min bg-pink-100 gap-2">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+</div>
+<div class="grid grid-flow-col auto-cols-max bg-pink-200 gap-2">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+</div>
+<div class="grid grid-flow-col auto-cols-auto bg-pink-300 gap-2">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+</div>
+<div class="grid grid-flow-col auto-cols-fr bg-pink-400 gap-2">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">7、Grid Auto Rows</div>
+<div class="grid grid-flow-row auto-rows-min bg-pink-100 gap-2 h-48 mb-1">
+  <div class="bg-pink-700"><br>01</div>
+  <div class="bg-pink-700"><br>02</div>
+  <div class="bg-pink-700"><br>03</div>
+</div>
+<div class="grid grid-flow-row auto-rows-max bg-pink-200 gap-2  h-48 mb-1">
+  <div class="bg-pink-700"><br>01</div>
+  <div class="bg-pink-700"><br>02</div>
+  <div class="bg-pink-700"><br>03</div>
+</div>
+<div class="grid grid-flow-row auto-rows-auto bg-pink-300 gap-2  h-48 mb-1">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+</div>
+<div class="grid grid-flow-row auto-rows-fr bg-pink-400 gap-2  h-48 mb-1">
+  <div class="bg-pink-700">01</div>
+  <div class="bg-pink-700">02</div>
+  <div class="bg-pink-700">03</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">8、Gap</div>
+Utilities for controlling gutters between grid and flexbox items.
+[gap-1] [gap-x-1] [gap-px] [gap-0]
+<hr class="border-black my-1">
+
+<div class="font-bold">9、Justify Content</div>
+<div class="flex justify-center bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="flex justify-start bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="flex justify-end bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="flex justify-between bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="flex justify-around bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="flex justify-evenly bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">10、Justify Items</div>
+<div class="grid justify-items-center grid-cols-3 bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="grid justify-items-start grid-cols-3 bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="grid justify-items-end grid-cols-3 bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="grid justify-items-stretch grid-cols-3 bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">11、Justify Self</div>
+<div class="grid justify-items-stretch grid-cols-3 bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700 justify-self-start">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="grid justify-items-stretch grid-cols-3 bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700  justify-self-end">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="grid justify-items-stretch grid-cols-3 bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700  justify-self-center">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="grid justify-items-stretch grid-cols-3 bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700 justify-self-auto">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<div class="grid justify-items-stretch grid-cols-3 bg-pink-200 gap-2 mb-1">
+  <div class="bg-pink-700">1</div>
+  <div class="bg-pink-700 justify-self-stretch">2</div>
+  <div class="bg-pink-700">3</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">12、Align Content</div>
+<div class="flex content-center flex-wrap bg-pink-200 gap-2 mb-1 h-20 w-40">
+  <div class="bg-pink-700 w-10">1</div>
+  <div class="bg-pink-700 w-10">2</div>
+  <div class="bg-pink-700 w-10">3</div>
+  <div class="bg-pink-700 w-10">4</div>
+  <div class="bg-pink-700 w-10">5</div>
+</div>
+<div class="flex content-start  flex-wrap bg-pink-200 gap-2 mb-1 h-20 w-40">
+  <div class="bg-pink-700 w-10">1</div>
+  <div class="bg-pink-700 w-10">2</div>
+  <div class="bg-pink-700 w-10">3</div>
+  <div class="bg-pink-700 w-10">4</div>
+  <div class="bg-pink-700 w-10">5</div>
+</div>
+<div class="flex content-end  flex-wrap bg-pink-200 gap-2 mb-1 h-20 w-40">
+  <div class="bg-pink-700 w-10">1</div>
+  <div class="bg-pink-700 w-10">2</div>
+  <div class="bg-pink-700 w-10">3</div>
+  <div class="bg-pink-700 w-10">4</div>
+  <div class="bg-pink-700 w-10">5</div>
+</div>
+<div class="flex content-between  flex-wrap bg-pink-200 gap-2 mb-1 h-20 w-40">
+  <div class="bg-pink-700 w-10">1</div>
+  <div class="bg-pink-700 w-10">2</div>
+  <div class="bg-pink-700 w-10">3</div>
+  <div class="bg-pink-700 w-10">4</div>
+  <div class="bg-pink-700 w-10">5</div>
+</div>
+<div class="flex content-around  flex-wrap bg-pink-200 gap-2 mb-1 h-20 w-40">
+  <div class="bg-pink-700 w-10">1</div>
+  <div class="bg-pink-700 w-10">2</div>
+  <div class="bg-pink-700 w-10">3</div>
+  <div class="bg-pink-700 w-10">4</div>
+  <div class="bg-pink-700 w-10">5</div>
+</div>
+<div class="flex content-evenly  flex-wrap bg-pink-200 gap-2 mb-1 h-20 w-40">
+  <div class="bg-pink-700 w-10">1</div>
+  <div class="bg-pink-700 w-10">2</div>
+  <div class="bg-pink-700 w-10">3</div>
+  <div class="bg-pink-700 w-10">4</div>
+  <div class="bg-pink-700 w-10">5</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">13、Align Self</div>
+原版
+<div class="flex items-start justify-between bg-pink-100 gap-2 mb-1 h14 w-40">
+  <div class="h-4 bg-pink-500 w-full">1</div>
+  <div class="h-12 bg-pink-500 w-full">2</div>
+  <div class="h-8  bg-pink-500 w-full">3</div>
+</div>
+1单独 self-end
+<div class="flex items-start justify-between bg-pink-100 gap-2 mb-1 h14 w-40">
+  <div class="h-4 bg-pink-500 w-full self-end">1</div>
+  <div class="h-12 bg-pink-500 w-full">2</div>
+  <div class="h-8  bg-pink-500 w-full">3</div>
+</div>
+1单独 self-baseline
+<div class="flex items-start justify-between bg-pink-100 gap-2 mb-1 h14 w-40">
+  <div class="h-4 bg-pink-500 w-full self-baseline">1</div>
+  <div class="h-12 bg-pink-500 w-full">2</div>
+  <div class="h-8  bg-pink-500 w-full">3</div>
+</div>
+1单独 self-center
+<div class="flex items-start justify-between bg-pink-100 gap-2 mb-1 h14 w-40">
+  <div class="h-4 bg-pink-500 w-full self-center">1</div>
+  <div class="h-12 bg-pink-500 w-full">2</div>
+  <div class="h-8  bg-pink-500 w-full">3</div>
+</div>
+1单独 self-stretch
+<div class="flex items-start justify-between bg-pink-100 gap-2 mb-1 h14 w-40">
+  <div class="h-4 bg-pink-500 w-full self-stretch">1</div>
+  <div class="h-12 bg-pink-500 w-full">2</div>
+  <div class="h-8  bg-pink-500 w-full">3</div>
+</div>
+1单独 self-auto
+<div class="flex items-start justify-between bg-pink-100 gap-2 mb-1 h14 w-40">
+  <div class="h-4 bg-pink-500 w-full self-auto">1</div>
+  <div class="h-12 bg-pink-500 w-full">2</div>
+  <div class="h-8  bg-pink-500 w-full">3</div>
+</div>
+<hr class="border-black my-1">
+
+
+<div class="font-bold">14、place-content</div>
+place-content属性在flex只能控制一个方向排列（单值），而在grid中可以同时控制垂直和水平方向排列（双值）
+center:
+<div class="grid grid-cols-3 gap-2 place-content-center h-32 bg-pink-50">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+place-content-start:
+<div class="grid grid-cols-3 gap-2 place-content-start h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+place-content-end:
+<div class="grid grid-cols-3 gap-2 place-content-end h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+place-content-evenly:
+<div class="grid grid-cols-3 gap-2 place-content-evenly h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+  <div class="bg-pink-300">7</div>
+  <div class="bg-pink-300">8</div>
+  <div class="bg-pink-300">9</div>
+</div>
+place-content-between:
+<div class="grid grid-cols-3 gap-2 place-content-between h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+  <div class="bg-pink-300">7</div>
+  <div class="bg-pink-300">8</div>
+  <div class="bg-pink-300">9</div>
+</div>
+place-content-around:(中间空间是两边的两倍)
+<div class="grid grid-cols-3 gap-2 place-content-around h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+  <div class="bg-pink-300">7</div>
+  <div class="bg-pink-300">8</div>
+  <div class="bg-pink-300">9</div>
+</div>
+place-content-baseline:
+<div class="grid grid-cols-3 gap-2 place-content-baseline h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+place-content-stretch:
+<div class="grid grid-cols-3 gap-2 place-content-stretch h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">15、place-Items</div>
+place-items-start:
+<div class="grid grid-cols-3 gap-2 place-items-start h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+place-items-end:
+<div class="grid grid-cols-3 gap-2 place-items-end h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+place-items-center:
+<div class="grid grid-cols-3 gap-2 place-items-center h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+place-items-stretch:
+<div class="grid grid-cols-3 gap-2 place-items-stretch h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold">16、Place Self</div>
+place-items-stretch place-self-start:
+<div class="grid grid-cols-3 gap-2 place-items-stretch h-32 bg-pink-100">
+  <div class="bg-pink-300">1</div>
+  <div class="bg-pink-300 place-self-end w-6 h-6">2</div>
+  <div class="bg-pink-300">3</div>
+  <div class="bg-pink-300">4</div>
+  <div class="bg-pink-300">5</div>
+  <div class="bg-pink-300">6</div>
+</div>
+<hr class="border-black my-1">
+</body>
+</html>

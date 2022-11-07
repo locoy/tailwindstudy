@@ -60,6 +60,87 @@
 - [Flex](flex.html)
 
 ### [2022-11-07]()
-计划中
-- [Grid]()
-- [Filters]()
+
+- [Grid](grid.html) 
+
+见grid.html，包含：
+
+[1、Grid Template Columns]() 
+
+[2、Grid Column Start / End]()
+
+[3、Grid Template Rows]()
+
+[5、Grid Auto Flow]()
+
+[6、Grid Auto Columns]()
+
+[7、Grid Auto Rows]()
+
+[8、Gap]()
+
+[9、Justify Content]()
+
+[10、Justify Items]()
+
+[11、Justify Self]()
+
+[12、Align Content]()
+
+[13、Align Self]()
+
+[14、place-content]()
+
+[15、place-Items]()
+
+[16、place-self]()
+
+
+
+Tailwind官方UI网站搭建
+
+`git clone https://github.com/davidivkovic/tailwindui.git
+`
+
+```
+<VirtualHost *:80>
+  ServerName tailwind.com
+  DocumentRoot "E:/Work/Git/TestProject/tailwind/tailwindui/preview"
+  <Directory "E:/Work/Git/TestProject/tailwind/tailwindui/preview">
+    Options +Indexes +Includes +FollowSymLinks +MultiViews
+    AllowOverride All
+    Require local
+    Require all granted
+  </Directory>
+</VirtualHost>
+```
+
+Host 127.0.0.1 tailwind.com 本地访问： http://tailwind.com/components/
+
+### [2022-11-08]()
+
+- [Filters](Filter.html)
+
+见Filter.html，包含：
+
+[1、Filter]() 
+
+[2、Blur]() 
+
+[3、Brightness]() 
+
+[4、Contrast]() 
+
+[5、Drop Shadow]() 
+
+[6、Grayscale]() 
+
+[7、Hue Rotate]() 
+
+[8、Invert]() 
+
+[9、Saturate]() 
+
+[10、Sepia]() 
+
+[11、BackDrop]() 背景处理的这个属性没搞太清楚，算了。
