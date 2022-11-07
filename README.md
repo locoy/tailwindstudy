@@ -4,6 +4,7 @@
 ---
 - [https://flowbite.com/](https://flowbite.com/)
 - [https://tailwind-elements.com/](https://tailwind-elements.com/)
+- [有人公开出来的tailwind官方UI](https://github.com/davidivkovic/tailwindui)
 - [tailwindcss官方安装说明文档](https://tailwindcss.com/docs/installation)
 - [tailwind中文文档](https://www.tailwindcss.cn/docs)
 ## 学习路线
@@ -47,3 +48,18 @@
 - [可见性]()
 - [Z-Index]()
 
+### [2022-11-06]()
+
+完成以下大类
+- [间距]()
+- [尺寸]()
+- [排版]()
+- [背景]()
+- [边框]()
+- [特效]()
+- [Flex]()
+
+### [2022-11-07]()
+计划中
+- [Grid]()
+- [Filters]()
