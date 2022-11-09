@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./style.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body class="">    
+<div class="font-bold ">1、Border Collapse</div>
+
+<table class="border-separate border border-slate-400 mb-2">
+  <thead>
+    <tr>
+      <th class="border border-slate-300">State</th>
+      <th class="border border-slate-300 ">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-slate-300 ">Indiana</td>
+      <td class="border border-slate-300 ">Indianapolis</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ">Ohio</td>
+      <td class="border border-slate-300 ">Columbus</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ">Michigan</td>
+      <td class="border border-slate-300 ">Detroit</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="border-collapse border border-slate-400">
+  <thead>
+    <tr>
+      <th class="border border-slate-300">State</th>
+      <th class="border border-slate-300 ">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-slate-300 ">Indiana</td>
+      <td class="border border-slate-300 ">Indianapolis</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ">Ohio</td>
+      <td class="border border-slate-300 ">Columbus</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ">Michigan</td>
+      <td class="border border-slate-300 ">Detroit</td>
+    </tr>
+  </tbody>
+</table>
+<hr class="border-black my-1">
+
+
+<div class="font-bold ">2、Border Spacing</div>
+<table class="border-separate border-spacing-2 border border-slate-400 mb-2">
+  <thead>
+    <tr>
+      <th class="border border-slate-300">State</th>
+      <th class="border border-slate-300 ">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-slate-300 ">Indiana</td>
+      <td class="border border-slate-300 ">Indianapolis</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ">Ohio</td>
+      <td class="border border-slate-300 ">Columbus</td>
+    </tr>
+    <tr>
+      <td class="border border-slate-300 ">Michigan</td>
+      <td class="border border-slate-300 ">Detroit</td>
+    </tr>
+  </tbody>
+</table>
+<hr class="border-black my-1">
+<div class="font-bold ">3、Table Layout</div>
+
+<table class="table-auto border-collapse border mb-2">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Artist</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+      <td>Malcolm Lockyer</td>
+      <td>1961</td>
+    </tr>
+    <tr>
+      <td>Witchy Woman</td>
+      <td>The Eagles</td>
+      <td>1972</td>
+    </tr>
+    <tr>
+      <td>Shining Star</td>
+      <td>Earth, Wind, and Fire</td>
+      <td>1975</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table-fixed border-collapse border mb-2">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Artist</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+      <td>Malcolm Lockyer</td>
+      <td>1961</td>
+    </tr>
+    <tr>
+      <td>Witchy Woman</td>
+      <td>The Eagles</td>
+      <td>1972</td>
+    </tr>
+    <tr>
+      <td>Shining Star</td>
+      <td>Earth, Wind, and Fire</td>
+      <td>1975</td>
+    </tr>
+  </tbody>
+</table>
+<hr class="border-black my-1">
+<div class="font-bold ">4、Transition Property</div>
+
+<button class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+  Save Changes
+</button>
+
+<button class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none">
+  Hover me
+</button>
+<hr class="border-black my-1">
+
+
+<div class="font-bold ">4、Transition Duration</div>
+<button class="px-4 py-2 font-semibold text-sm bg-violet-500 text-white rounded-md shadow-sm hover:scale-125 ease-in-out duration-150">Button A</button>
+<button class="transition hover:scale-125 duration-300">Button B</button>
+<button class="transition hover:scale-125 duration-700">Button C</button>
+<button class="transition hover:scale-125 duration-1000">Button D</button>
+<hr class="border-black my-1">
+
+</body>
+</html>
