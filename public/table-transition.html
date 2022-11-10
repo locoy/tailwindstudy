@@ -158,5 +158,154 @@
 <button class="transition hover:scale-125 duration-1000">Button D</button>
 <hr class="border-black my-1">
 
+
+<div class="font-bold ">5、Transition Timing Function</div>
+
+<div class="rounded-t-xl overflow-hidden bg-gradient-to-r from-indigo-50 to-indigo-100 p-10">
+  <div class="flex justify-around items-center">
+    <button class="transition duration-700 ease-in transform hover:scale-125 bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md">
+      A
+    </button>
+    <button class="transition duration-700 ease-out transform hover:scale-125 bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md">
+     B
+    </button>
+    <button class="transition duration-700 ease-in-out transform hover:scale-125 bg-indigo-600 text-white font-semibold py-3 px-6 rounded-md">
+     C 
+    </button>
+  </div>
+</div>
+
+<hr class="border-black my-1">
+<div class="font-bold ">6、Transition Delay</div>
+[Delay-300]
+<div class="relative rounded-xl overflow-auto p-8">
+  <div class="flex flex-col sm:flex-row gap-8 sm:gap-0 justify-around text-white text-sm font-bold leading-6">
+    <div class="flex flex-col items-center shrink-0">
+      <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">delay-150</p>
+      <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm hover:scale-125 ease-in-out duration-300 delay-150">Button A</button>
+    </div>
+    <div class="flex flex-col items-center shrink-0">
+      <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">delay-300</p>
+      <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm hover:scale-125 ease-in-out duration-300 delay-300">Button B</button>
+    </div>
+    <div class="flex flex-col items-center shrink-0">
+      <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">delay-700</p>
+      <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm hover:scale-125 ease-in-out duration-300 delay-700">Button C</button>
+    </div>
+  </div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">7、Animation 动画</div>
+<div class="flex items-center justify-center mx-4">
+  <button type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed" disabled="">
+    <svg class="animate-ping -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-30" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-90" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+    Processing1
+  </button>
+
+  <button type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed" disabled="">
+    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-30" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-90" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+    Processing2
+  </button>
+
+  <button type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed" disabled="">
+    <svg class="animate-pulse -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-30" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-90" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+    Processing3
+  </button>
+
+  <button type="button" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed" disabled="">
+    <svg class="animate-bounce -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-30" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-90" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+    Processing4
+  </button>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">8、Transforms Scale</div>
+<div class="grid grid-cols-3 bg-slate-200 justify-items-center mb-2">
+<img class="scale-75" src="./images/erin-lindford.png">
+<img class="scale-100" src="./images/erin-lindford.png">
+<img class="scale-x-50" src="./images/erin-lindford.png">
+</div>
+<hr class="border-black my-1">
+
+
+<div class="font-bold ">9、Transforms Rotate</div>
+<div class="grid grid-cols-3 bg-slate-200 justify-items-center mb-2">
+<img class="rotate-0" src="./images/erin-lindford.png">
+<img class="rotate-45" src="./images/erin-lindford.png">
+<img class="rotate-180" src="./images/erin-lindford.png">
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">10、Transforms Translate</div>
+<div class="grid grid-cols-3 bg-slate-200 justify-items-center mb-2">
+<img class="translate-y-6" src="./images/erin-lindford.png">
+<img class="-translate-y-6" src="./images/erin-lindford.png">
+<img class="translate-x-6" src="./images/erin-lindford.png">
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">11、Transforms Skew</div>
+<div class="grid grid-cols-3 bg-slate-200 justify-items-center mb-2">
+<img class="skew-x-0" src="./images/erin-lindford.png">
+<img class="skew-y-6" src="./images/erin-lindford.png">
+<img class="skew-x-12" src="./images/erin-lindford.png">
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">12、Transforms Origin</div>
+<div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+  <div class="flex items-center justify-around gap-12 sm:gap-4 font-mono font-bold p-8 px-12 sm:px-8 pb-10 shrink-0">
+    <div class="flex flex-col items-center shrink-0">
+      <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">origin-center</p>
+      <div class="relative">
+        <div class="absolute inset-0">
+          <img class="w-24 h-24 object-cover rounded-lg opacity-25" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80">
+        </div>
+        <div class="relative z-10 origin-center rotate-45">
+          <img class="w-24 h-24 object-cover rounded-lg shadow-xl" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80">
+          <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center shrink-0">
+      <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">origin-top-left</p>
+      <div class="relative">
+        <div class="absolute inset-0">
+          <img class="w-24 h-24 object-cover rounded-lg opacity-25" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80">
+        </div>
+        <div class="relative z-10 origin-top-left rotate-12">
+          <img class="w-24 h-24 object-cover rounded-lg shadow-xl" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80">
+          <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center shrink-0">
+      <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">origin-bottom</p>
+      <div class="relative">
+        <div class="absolute inset-0">
+          <img class="w-24 h-24 object-cover rounded-lg opacity-25" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80">
+        </div>
+        <div class="relative z-10 origin-bottom -rotate-12">
+          <img class="w-24 h-24 object-cover rounded-lg shadow-xl" src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80">
+          <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<hr class="border-black my-1">
 </body>
 </html>

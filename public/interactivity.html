@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./style.css" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body class="">    
+<div class="font-bold ">1、Accent Color</div>
+<label>
+  <input type="checkbox" checked> Browser default
+</label>
+<label>
+  <input type="checkbox" class="accent-pink-500" checked> Customized
+</label>
+<input type="checkbox" class="accent-emerald-500/25" checked> Emerald
+<hr class="border-black my-1">
+
+<div class="font-bold ">2、Appearance</div>
+<select>
+  <option>Yes</option>
+  <option>No</option>
+  <option>Maybe</option>
+</select>
+<select class="appearance-none">
+  <option>Yes</option>
+  <option>No</option>
+  <option>Maybe</option>
+</select>
+<hr class="border-black my-1">
+
+<div class="font-bold ">3、Cursor</div>
+<button type="button" class="cursor-pointer">
+  Submit
+</button>
+<button type="button" class="cursor-progress">
+  Saving...
+</button>
+<button type="button" disabled class="cursor-not-allowed">
+  Confirm
+</button>
+<hr class="border-black my-1">
+
+<div class="font-bold ">4、Caret Color</div>
+<textarea name="" class=" caret-pink-500 m-1" id="" cols="30" rows="3"></textarea>
+<hr class="border-black my-1">
+
+<div class="font-bold ">5、Pointer Events</div>
+<div class="relative">
+  <div class="absolute pointer-events-auto">
+    <svg class="absolute text-slate-400 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+    </svg>
+  </div>
+  <input type="text" placeholder="Search" class="">
+</div>
+
+<div class="relative">
+  <div class="absolute pointer-events-none">
+    <svg class="absolute text-slate-400 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+    </svg>
+  </div>
+  <input type="text" placeholder="Search" class="">
+</div>
+<hr class="border-black my-1">
+
+
+<div class="font-bold ">6、Resize</div>
+<textarea class="resize-y rounded-md border"></textarea>
+<hr class="border-black my-1">
+
+<div class="font-bold ">7、Scroll Behavior</div>
+<div class=" scroll-smooth h-32  w-60 overflow-scroll">You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:scroll-auto to apply the scroll-auto utility at only medium screen sizes and above.You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:scroll-auto to apply the scroll-auto utility at only medium screen sizes and above.You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:scroll-auto to apply the scroll-auto utility at only medium screen sizes and above.
+  You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:scroll-auto to apply the scroll-auto utility at only medium screen sizes and above.
+  You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:scroll-auto to apply the scroll-auto utility at only medium screen sizes and above.
+  You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:scroll-auto to apply the scroll-auto utility at only medium screen sizes and above.
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">7、Scroll Margin</div>
+<div class="relative rounded-xl overflow-auto">
+  <div class="w-full flex gap-12 snap-x overflow-x-auto py-14">
+    <div class="snap-start scroll-ml-6 shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+      <div class="bg-stripes-pink w-6 absolute top-0 left-0 bottom-0"></div>
+      <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+    </div>
+    <div class="snap-start scroll-ml-6 shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+      <div class="bg-stripes-pink w-6 absolute top-0 -left-6 bottom-0"></div>
+      <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+    </div>
+    <div class="snap-start scroll-ml-6 shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+      <div class="bg-stripes-pink w-6 absolute top-0 -left-6 bottom-0"></div>
+      <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+    </div>
+    <div class="snap-start scroll-ml-6 shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+      <div class="bg-stripes-pink w-6 absolute top-0 -left-6 bottom-0"></div>
+      <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+    </div>
+    <div class="snap-start shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+      <div class="bg-stripes-pink w-6 absolute top-0 -left-6 bottom-0"></div>
+      <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white" src="https://images.unsplash.com/photo-1575424909138-46b05e5919ec?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=160&amp;q=80">
+    </div>
+  </div>
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">7、Scroll Padding</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">8、Touch Action</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">9、User Select</div>
+<div class="select-none">
+  The quick brown fox jumps over the lazy dog.
+</div>
+<div class="select-all">
+  The quick brown fox jumps over the lazy dog3.
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">7、Scroll Padding</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">8、Touch Action</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">9、User Select</div>
+<div class="select-none">
+  The quick brown fox jumps over the lazy dog.
+</div>
+<div class="select-all">
+  The quick brown fox jumps over the lazy dog3.
+</div>
+<hr class="border-black my-1">
+
+<div class="font-bold ">10、Will Change</div>
+<div class="overflow-auto will-change-scroll">
+  The quick brown fox jumps over the lazy do
+</div>
+<hr class="border-black my-1">
+</body>
+</html>
