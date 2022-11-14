@@ -4,6 +4,7 @@
 ---
 - [https://flowbite.com/](https://flowbite.com/)
 - [https://tailwind-elements.com/](https://tailwind-elements.com/)
+- [https://preline.co/index.html](https://preline.co/index.html)
 - [有人公开出来的tailwind官方UI](https://github.com/davidivkovic/tailwindui)
 - [tailwindcss官方安装说明文档](https://tailwindcss.com/docs/installation)
 - [tailwind中文文档](https://www.tailwindcss.cn/docs)

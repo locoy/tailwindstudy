@@ -5,7 +5,7 @@ var chalk = require('chalk');
 gulp.task('default', function () {
 
   // watch for javascript file (*.js) changes, in current directory (./)
-  gulp.watch('./public/*.html', function () {
+  gulp.watch('./public/**/*.html', function () {
 
     console.log(chalk.red('watch file changed,rebuild css'));
     // run an npm command called `test`, when above js file changes

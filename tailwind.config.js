@@ -8,10 +8,12 @@ module.exports = {
   },
   variants:{
     extend:{
-      opacity : ['disabled'],
-      backgroundColor: ['checked'],
-      borderColor: ['checked'],
+      // opacity : ['disabled'],
+      // backgroundColor: ['checked'],
+      // borderColor: ['checked'],
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
